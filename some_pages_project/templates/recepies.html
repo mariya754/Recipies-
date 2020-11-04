@@ -4,22 +4,19 @@
       <meta charset="utf-8" />
       <title>recepies</title>
 	</head>
-<body bgcolor="FFEBB2">
+<body bgcolor="FFEBB2">{% extends 'base.html' %}
+
+{% block content %}
  <font align="center"> <p style="font-size:70px;">  Блог о рецептах тортов </p>
 </font>
  <font align="left"> <p style="font-size:30px;">  Рецепты </p>
-</font>
-<a href="vanilla-biscuit.html"> <font align="left"> <p style="font-size:30px;"> Ванильный бисквит</p>
-</font></a>
-<a href="chocolate-biscuit.html"> <font align="left"> <p style="font-size:30px;"> Шоколадный бисквит</p>
-</font></a>
-<a href="red-velvet-cake.html"> <font align="left"> <p style="font-size:30px;"> Красный бархат</p>
-</font></a>
-<a href="base-cream-cheese.html"> <font align="left"> <p style="font-size:30px;"> Базовый крем</p>
-</font></a>
-<img src="images/cake1.jpg" width="630" height="650" margin=5px>
-<img src="images/cake2.jpg" width="630" height="650" margin=5px>
-<img src="images/cake3.jpg" width="622.5" height="650" align="right">
+</font> 
 
+<h1>Главная</h1>
+
+<img src="cake1.jpg" width="630" height="650" margin=5px>
+<img src="cake2.jpg" width="630" height="650" margin=5px>
+<img src="cake3.jpg" width="622.5" height="650" align="right">
+{% endblock %}
  </body> 
  </html>

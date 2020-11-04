@@ -5,13 +5,15 @@
       <title>Торт Красный бархат</title>
 	</head>
 <body bgcolor="FFEBB2">
-<a href="recepies.html"> <font align="left"> <p style="font-size:30px;"> На главную</p> </a>
- <font align="center"> <p style="font-size:70px;"> Яркий торт Красный бархат </p>
+  {% extends 'base.html' %}
+
+  {% block content %}
+  <font align="center"> <p style="font-size:70px;"> Яркий торт Красный бархат </p>
 </font>
 	</head>
 <body bgcolor="FFEBB2">
 
-<img src="red-velvet/n1.jpg" width="850" height="650" align="right" >
+<img src="r1.jpg" width="850" height="650" align="right" >
 <font align="left"> <p style="font-size:40px;">  Что нужно: <br>
 
 </font>
@@ -43,8 +45,9 @@
 5)На это количество теста у меня ушло примерно 1,5-2 ч.л. гелевого красителя. Здесь не жалейте, тесто должно быть ядерно-красного цвета. Хорошо всё перемешайте миксером. 
 <br>
 Тесто будет довольно жидким, не пугайтесь, так и должно быть. Оставьте его минут на 10-20, всё дело в том, что соде нужно какое-то время, чтобы вступить в реакцию с молочным ингредиентом. </p>
-</font> <img src="red-velvet/n2.jpg" width="750" height="550" >
-<img src="red-velvet/n3.jpg" width="750" height="550" >
+</font>
+<img src="r2.jpg" width="750" height="550" >
+<img src="r3.jpg" width="750" height="550" >
 <font align="left"> <p style="font-size:30px;"> 
  </p>
 </font> 
@@ -61,7 +64,7 @@
 Через два часа достаньте коржи и срежьте аккуратно верхушку — скорее всего она немного поднимется в центре. 
 
 <font align="left"> <p style="font-size:30px;">
- Крем я использовал  <a href="base-cream-cheese.html">сливочный, </a> он вам хорошо знаком.</p> </font>
+ Крем я использовала сливочный(базовый)  он вам хорошо знаком.</p> </font>
 
  <font align="left"> <p style="font-size:30px;"> Сверху будет удачно отсадить розочки — этакая красная брутальность и белая нежность.
 
@@ -70,6 +73,6 @@
 </font>
 
 
-<img src="red-velvet/n4.jpg" width="750" height="850"  >
+<img src="r4.jpg" width="750" height="850"  > {% endblock %}
  </body> 
  </html>

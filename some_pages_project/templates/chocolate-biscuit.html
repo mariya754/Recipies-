@@ -5,10 +5,12 @@
       <title>Шоколадный бисквит</title>
 	</head>
 <body bgcolor="FFEBB2">
-<a href="recepies.html"> <font align="left"> <p style="font-size:30px;"> На главную</p> </a>
+  {% extends 'base.html' %}
+
+  {% block content %}
  <font align="center"> <p style="font-size:70px;">  Простейший шоколадный бисквит </p>
 </font>
-<img src="chocolate/n1.jpg" width="850" height="650" align="right" >
+<img src="c1.jpg" width="850" height="650" align="right" >
 <font align="left"> <p style="font-size:40px;">  Что нужно: <br>
 
 </font>
@@ -38,8 +40,8 @@
 Как я уже писал, делаем в форме от 16 до 20 см. ВАЖНО! Тесто удвоится в объеме, поэтому не вздумайте наливать тесто больше, чем до половины формы. Форму смазываем маслом. На дно я всегда кладу пергамент, просто так не нужно долго мучаться с выниманием коржа.
 Идеально подойдут металлические кольца на 16 или 18 см, а также разъемные формы или цельные. <br> </p>
 </font> 
-<img src="chocolate/n2.1.jpg" width="850" height="550" >
-<img src="chocolate/n2.jpg" width="850" height="550" ><font align="left"> <p style="font-size:30px;">
+<img src="c2.jpg" width="850" height="550" >
+<img src="c3.jpg" width="850" height="550" ><font align="left"> <p style="font-size:30px;">
 4)Выпекайте при 155 градусах примерно 50-90 минут. Поначалу корж будет активно расти, затем успокоится. Сверху может появиться бугорок, и даже, возможно, треснет — не пугайтесь, это хорошо, мы получаем пористую структуру.
 Как обычно, проверяем деревянной шпажкой. Она должна выходить сухой. То есть минут через 40 начинаем проверять каждые 5 минут.
 <br>
@@ -55,6 +57,6 @@
 </font>
 
 
-<img src="chocolate/n3.jpg" width="750" height="950"  >
+<img src="c4.jpg" width="750" height="950"  > {% endblock %}
  </body> 
  </html>
