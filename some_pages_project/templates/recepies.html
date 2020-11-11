@@ -1,23 +1,25 @@
 {% load static %}
+
  <!DOCTYPE html>
 <html>
     <head>
       <meta charset="utf-8" />
       <title>recepies</title>
 	</head>
-<body bgcolor="FFEBB2">{% extends 'base.html' %}
-
-{% block content %}
+<body bgcolor="FFEBB2">
  <font align="center"> <p style="font-size:70px;">  Блог о рецептах тортов </p>
 </font>
- <font align="left"> <p style="font-size:30px;">  Рецепты </p>
-</font> 
+ 
+<header>
+  <a href="{% url 'recepies' %}">Recepies</a> | <a href="{% url 'vanilla' %}">Vanilla</a> | <a href="{% url 'chocolate' %}">Chocolate</a> | <a href="{% url 'red-velvet' %}">Red Velvet</a> | <a href="{% url 'cream' %}">Cream-cheese</a>
+</header>
 
-<h1>Главная</h1>
-
-<img src="{% static 'images/cake1.jpg' %}" width="630" height="650" margin=5px>
-<img src="{% static 'images/cake2.jpg' %}" width="630" height="650" margin=5px>
-<img src="{% static 'images/cake3.jpg' %}" width="622.5" height="650" align="right">
-{% endblock %}
+<br>
+<a href="{% url 'chocolate' %}">
+<img src="{% static 'images/cake1.jpg' %}" width="33%"  margin=5px></a>
+<a href="{% url 'vanilla' %}">
+<img src="{% static 'images/cake2.jpg' %}" width="33%"  margin=5px></a>
+<a href="{% url 'cream' %}">
+<img src="{% static 'images/cake3.jpg' %}" width="33%" ></a>
  </body> 
  </html>

@@ -6,9 +6,9 @@
       <title>Базовый бисквит</title>
 	</head>
 <body bgcolor="FFEBB2">
- {% extends 'base.html' %}
-
-  {% block content %}
+  <header>
+    <a href="{% url 'recepies' %}">Recepies</a> | <a href="{% url 'vanilla' %}">Vanilla</a> | <a href="{% url 'chocolate' %}">Chocolate</a> | <a href="{% url 'red-velvet' %}">Red Velvet</a> | <a href="{% url 'cream' %}">Cream-cheese</a>
+  </header>
   <h1>Ванильный бисквит</h1>
   
  <font align="center"> <p style="font-size:70px;">  Ванильный(базовый) бисквит </p>
@@ -54,7 +54,7 @@
 
 </font>
 
-<img src="{% static images/v2.jpg %}" width="750" height="550" >
-<img src="{% static images/v3.jpg}" width="750" height="550"  >{% endblock %}
+<img src="{% static 'images/v2.jpg' %}" width="750" height="550" >
+<img src="{% static 'images/v3.jpg' %}" width="750" height="550"  >
  </body> 
  </html>

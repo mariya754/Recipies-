@@ -4,14 +4,15 @@
     <head>
       <meta charset="utf-8" />
       <title>Шоколадный бисквит</title>
-	</head>
+  </head>
+  
 <body bgcolor="FFEBB2">
-  {% extends 'base.html' %}
-
-  {% block content %}
+  <header>
+    <a href="{% url 'recepies' %}">Recepies</a> | <a href="{% url 'vanilla' %}">Vanilla</a> | <a href="{% url 'chocolate' %}">Chocolate</a> | <a href="{% url 'red-velvet' %}">Red Velvet</a> | <a href="{% url 'cream' %}">Cream-cheese</a>
+  </header>
  <font align="center"> <p style="font-size:70px;">  Простейший шоколадный бисквит </p>
 </font>
-<img src="{% static images/c1.jpg %}" width="850" height="650" align="right" >
+<img src="{% static 'images/c1.jpg' %}" width="850" height="650" align="right" >
 <font align="left"> <p style="font-size:40px;">  Что нужно: <br>
 
 </font>
@@ -41,8 +42,8 @@
 Как я уже писал, делаем в форме от 16 до 20 см. ВАЖНО! Тесто удвоится в объеме, поэтому не вздумайте наливать тесто больше, чем до половины формы. Форму смазываем маслом. На дно я всегда кладу пергамент, просто так не нужно долго мучаться с выниманием коржа.
 Идеально подойдут металлические кольца на 16 или 18 см, а также разъемные формы или цельные. <br> </p>
 </font> 
-<img src="{% static images/c2.jpg %}" width="850" height="550" >
-<img src="{% static images/c3.jpg %}" width="850" height="550" ><font align="left"> <p style="font-size:30px;">
+<img src="{% static 'images/c2.jpg' %}" width="850" height="550" >
+<img src="{% static 'images/c3.jpg' %}" width="850" height="550" ><font align="left"> <p style="font-size:30px;">
 4)Выпекайте при 155 градусах примерно 50-90 минут. Поначалу корж будет активно расти, затем успокоится. Сверху может появиться бугорок, и даже, возможно, треснет — не пугайтесь, это хорошо, мы получаем пористую структуру.
 Как обычно, проверяем деревянной шпажкой. Она должна выходить сухой. То есть минут через 40 начинаем проверять каждые 5 минут.
 <br>
@@ -58,6 +59,6 @@
 </font>
 
 
-<img src="{% static images/c4.jpg %}" width="750" height="950"  > {% endblock %}
+<img src="{% static 'images/c4.jpg' %}" width="750" height="950"  >
  </body> 
  </html>

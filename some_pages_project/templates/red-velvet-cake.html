@@ -6,15 +6,15 @@
       <title>Торт Красный бархат</title>
 	</head>
 <body bgcolor="FFEBB2">
-  {% extends 'base.html' %}
+  <header>
+    <a href="{% url 'recepies' %}">Recepies</a> | <a href="{% url 'vanilla' %}">Vanilla</a> | <a href="{% url 'chocolate' %}">Chocolate</a> | <a href="{% url 'red-velvet' %}">Red Velvet</a> | <a href="{% url 'cream' %}">Cream-cheese</a>
+  </header>
 
-  {% block content %}
   <font align="center"> <p style="font-size:70px;"> Яркий торт Красный бархат </p>
 </font>
-	</head>
-<body bgcolor="FFEBB2">
 
-<img src="{% static images/r1.jpg %}" width="850" height="650" align="right" >
+
+<img src="{% static 'images/r1.jpg' %}" width="850" height="650" align="right" >
 <font align="left"> <p style="font-size:40px;">  Что нужно: <br>
 
 </font>
@@ -47,8 +47,8 @@
 <br>
 Тесто будет довольно жидким, не пугайтесь, так и должно быть. Оставьте его минут на 10-20, всё дело в том, что соде нужно какое-то время, чтобы вступить в реакцию с молочным ингредиентом. </p>
 </font>
-<img src="{% static images/r2.jpg %}" width="750" height="550" >
-<img src="{% static images/r3.jpg %}" width="750" height="550" >
+<img src="{% static 'images/r2.jpg' %}" width="750" height="550" >
+<img src="{% static 'images/r3.jpg' %}" width="750" height="550" >
 <font align="left"> <p style="font-size:30px;"> 
  </p>
 </font> 
@@ -74,6 +74,6 @@
 </font>
 
 
-<img src="{% static images/r4.jpg %}" width="750" height="850"  > {% endblock %}
+<img src="{% static 'images/r4.jpg' %}" width="750" height="850"  > 
  </body> 
  </html>
