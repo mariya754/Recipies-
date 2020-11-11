@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,7 +11,7 @@
   {% block content %}
  <font align="center"> <p style="font-size:70px;">  Базовый крем </p>
 </font>
-<img src="n1.jpg" width="950" height="650" align="right" >
+<img src="{% static images/n1.jpg %}" width="950" height="650" align="right" >
 <font align="left"> <p style="font-size:60px;">  Что нужно: <br>
 
 </font>
@@ -29,8 +30,8 @@
 Обратите внимание, что каждую минуту, что вы взбиваете масло и пудру, они становятся белее. Если вы хотите получить белый крем, просто взбивайте масло и пудру дольше. Второй плюс, паста становится всё более послушной и однородной.
  </p></font>
 
-<img src="n2.jpg" width="750" height="550" >
-<img src="n3.jpg" width="750" height="550">
+<img src="{% static images/n2.jpg %}" width="750" height="550" >
+<img src="{% static images/n3.jpg" width="750" height="550">
 
 <font align="left"> <p style="font-size:40px;">
 Важно на этом этапе добавить натуральный экстракт ванили (5 г). <br>
@@ -40,7 +41,7 @@
 
 
 </font>
-<img src="n4.jpg" width="750" height="550">
+<img src="{% static images/n4.jpg" width="750" height="550">
 <img src="n5.jpg" width="750" height="550"> {% endblock %}
  </body> 
  </html>

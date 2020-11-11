@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+{% load static %}
+<!DOCTYPE html>
 <html>
     <head>
       <meta charset="utf-8" />
@@ -12,7 +13,7 @@
   
  <font align="center"> <p style="font-size:70px;">  Ванильный(базовый) бисквит </p>
 </font>
-<img src="v1.jpg" width="850" height="650" align="right" >
+<img src="{% static 'images/v1.jpg' %}" width="850" height="650" align="right" > 
 <font align="left"> <p style="font-size:40px;">  Что нужно: <br>
 
 </font>
@@ -53,7 +54,7 @@
 
 </font>
 
-<img src="v2.jpg" width="750" height="550" >
-<img src="v3.jpg" width="750" height="550"  >{% endblock %}
+<img src="{% static images/v2.jpg %}" width="750" height="550" >
+<img src="{% static images/v3.jpg}" width="750" height="550"  >{% endblock %}
  </body> 
  </html>
